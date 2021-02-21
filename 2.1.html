@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="jquery-3.5.1.js"></script>
+        <script>
+            function asd(){
+             $("p").hide();
+            };
+
+           function asia(){
+            if ($("#btn2").is(':checked')) {   
+                $(".asia").show();
+            } 
+            else {
+                $(".asia").hide();
+            }};
+
+            function europe(){
+            if ($("#btn1").is(':checked')) {   
+                $(".europe").show();
+            } 
+            else {
+                $(".europe").hide();
+            }};
+
+            function USA(){
+            if ($("#btn3").is(':checked')) {   
+                $(".USA").show();
+            } 
+            else {
+                $(".USA").hide();
+            }};
+
+            function africa(){
+            if ($("#btn4").is(':checked')) {   
+                $(".africa").show();
+            } 
+            else {
+                $(".africa").hide();
+            }};
+            
+        </script>
+    </head>
+    <body onload="asd()">
+
+        <input type="checkbox" id="btn1" onchange='europe();'/>Показать страны Европы<br>
+        <input type="checkbox" id="btn2" onchange="asia()"/>Показать страны Азии<br>
+        <input type="checkbox" id="btn3" onchange="USA()"/>Показать страны Америки<br>
+        <input type="checkbox" id="btn4" onchange="africa()"/>Показать страны Африки<br>
+        
+        <p class="asia">Монголия</p>
+        <p class="europe">Германия</p>
+        <p class="europe">Италия</p>
+        <p class="europe">Сербия</p>
+        <p class="asia">Китай</p>
+        <p class="europe">Украина</p>
+        <p class="asia">Таиланд</p>
+        <p class="asia">Вьетнам</p>
+        <p class="europe">Франция</p>
+        <p class="asia">Япония</p>
+
+        <p class="USA">США</p>
+        <p class="africa">Нигерия</p>
+        <p class="africa">ОАЭ</p>
+        <p class="USA">Канада</p>
+        <p class="USA">Мексика</p>
+        <p class="africa">Мономатапа</p>
+        <p class="USA">Чили</p>
+        <p class="africa">Тбилиси</p>
+        <p class="asia">Корея</p>
+        <p class="europe">Великобритания</p>
+
+
+    
+    </body>
+</html>
